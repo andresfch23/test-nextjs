@@ -19,13 +19,11 @@ const ProductPage = () => {
       .catch(console.log)
   }, [id])
 
-  const name = product && product.name
-
   return (
     <section>
       <h1>{product?.name}</h1>
-      {/* <p>{product?.attributes?.description}</p>
-      <img src={product?.image}></img> */}
+      <p>{product?.attributes?.description}</p>
+      <img src={product?.image}></img>
     </section>
   )
 }
